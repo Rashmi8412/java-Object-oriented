@@ -1,0 +1,28 @@
+package com.rashmitech.corejava.inhertance;
+
+public class Bahubali extends Tollywood {
+	public Bahubali() {
+		super("250 crores");
+	}
+
+	
+
+}
+package com.rashmitech.corejava.inhertance;
+
+public class BahuMain {
+
+	public static void main(String[] args) {
+		Bahubali bahu=new Bahubali();
+		String hero=bahu.hero();
+		String director=bahu.director();
+		String music=bahu.music();
+		System.out.println("moive hero name: "+hero);
+		System.out.println("movie director: "+director);
+		System.out.println("movie music director:"+music);
+		bahu.collection();
+		
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.rashmitech.corejava.inhertance;
+
+public class Tollywood {
+	public Tollywood(String budget) {
+		System.out.println("Bahubali movie budget is 250 crores");
+		}
+	public  String hero() {
+		return "Prabhas";
+	}
+	public String director() {
+		return "Rajamouli";
+	}
+	
+	public String music() {
+		return "Keeravani";
+	}
+	public static void collection(){
+		System.out.println("Box office collection is 1,810 crore ");
+	}
+	
+	
+
+}
