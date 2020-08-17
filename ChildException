@@ -1,0 +1,8 @@
+package com.rashmitech.exceptiondemo;
+
+public class ChildException extends RuntimeException {
+	public ChildException(String message) {
+		super(message);
+	}
+
+}

@@ -1,0 +1,32 @@
+package com.rashmitech.exceptiondemo;
+
+public class Register {
+
+	public static void main(String[] args) {
+		if(args.length>0) {
+			String age=args[0];
+		
+		double ageInt=0;
+		try {
+			   ageInt  =Double.parseDouble(age);
+		}catch(NumberFormatException e) {
+			System.err.println("please enter valid! age in number format");
+			System.exit(0);
+		}
+			
+	if(ageInt < 21) {
+		throw new ChildException("You are not eligible for Marriage");
+	}
+	if(ageInt>60) {
+		throw new TooOldException("Sorry we are not enable to see match for you");
+	}
+	System.out.println("Welcome to Matrimony site");
+	}
+	
+	else {
+		System.err.println("Please Enter age");
+	}
+}
+}
+
+
