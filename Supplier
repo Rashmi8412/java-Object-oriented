@@ -1,0 +1,14 @@
+package com.rashmitech.java.lambda;
+
+import java.util.function.Supplier;
+
+public class SupplierDemo {
+
+	public static void main(String[] args) {
+		Supplier<String>getposts=()->"Loading All Facebook posts";
+		String message=getposts.get();
+		System.out.println(message);
+
+	}
+
+}
