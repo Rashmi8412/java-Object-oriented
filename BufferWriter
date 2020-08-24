@@ -1,0 +1,30 @@
+package com.rashmitech.ioexception;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class BufferWriterDemo {
+
+	public static void main(String[] args) {
+		BufferedWriter br=null;
+		try {
+			br=new BufferedWriter(new FileWriter("C:\\Users\\hp\\Desktop\\world.txt",true));
+			for(int i=0;i<10;i++) {
+				br.write("this is test message"+i);
+				br.newLine();
+			}
+			br.flush();
+			System.out.println("Done");
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				if(null!=br)
+					br.close();
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+		}
+	}
+}

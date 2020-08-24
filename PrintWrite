@@ -1,0 +1,30 @@
+package com.rashmitech.ioexception;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class PrintWriteDemo {
+
+	public static void main(String[] args) {
+		PrintWriter pw=null;
+		try {
+			pw = new PrintWriter("C:\\Users\\hp\\Desktop\\sample.txt");
+		
+		pw.write(100);
+		pw.println();
+		pw.print(100);pw.print(600);
+		pw.print(true);
+		pw.println("Test Message");
+		pw.print(5000.00);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally {
+			if(null!=pw)
+				pw.close();
+		}
+	}
+	}
+
+
+	
