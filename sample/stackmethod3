@@ -1,0 +1,26 @@
+package com.rashmitech.java.collection;
+
+import java.util.Stack;
+
+public class StackDemo3 {
+
+	public static void main(String[] args) {
+		Stack <String>stack=new Stack<>();
+
+		stack.push("Lenovo");
+		stack.push("Samsung");
+		stack.push("Dell");
+		stack.push("HP");
+		stack.push("Acer");
+		int x=stack.size();
+		System.out.println("Size:"+x);
+		int location=stack.search("asus");
+		System.out.println("Laptop:"+location);
+		int y=stack.search("Dell");
+		System.out.println("Search:"+y);
+   }
+
+}
+//Size:5
+Laptop:-1
+Search:3

@@ -1,0 +1,21 @@
+package com.rashmitech.java.collection;
+
+import java.util.Stack;
+
+public class Stackdemo2 {
+
+	public static void main(String[] args) {
+		Stack<String>fruit=new Stack<>();
+		fruit.push("Apple");
+		fruit.push("Mango");
+		fruit.push("Grapes");
+		fruit.push("Orange");
+		System.out.println("Stack elements:"+fruit);
+		String fruits=fruit.peek();
+		System.out.println("Top element:"+fruits);
+
+	}
+
+}
+//Stack elements:[Apple, Mango, Grapes, Orange]
+Top element:Orange

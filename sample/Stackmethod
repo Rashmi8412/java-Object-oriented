@@ -1,0 +1,30 @@
+package com.rashmitech.java.collection;
+
+import java.util.Stack;
+
+public class StackDemo {
+
+	public static void main(String[] args) {
+		Stack<String>names=new Stack<>();
+		boolean result=names.empty();
+		System.out.println("Stack is empty:"+result);
+
+		names.push("sita");
+		names.push("geetha");
+		names.push("seema");
+		names.push("rita");
+		names.push("sandy");
+
+	    System.out.println(names.pop());
+		System.out.println(names.pop());
+		System.out.println(names.pop());
+		boolean answer=names.empty();
+		System.out.println("Stack is empty:"+answer);
+	}
+
+}
+//Stack is empty:true
+sandy
+rita
+seema
+Stack is empty:false
