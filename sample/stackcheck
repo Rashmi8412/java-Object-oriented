@@ -1,0 +1,26 @@
+package com.rashmitech.java.collection;
+
+import java.util.Stack;
+
+public class Stackcheck extends Test {
+
+	public static void main(String[] args) {
+		Stack<Integer>stack=new Stack<>();
+		stack_push(stack);
+		stack_pop(stack);
+		stack_push(stack);
+		stack_peek(stack);
+		stack_search(stack,2);
+		stack_search(stack,6);
+	}
+}
+//Pop operation:
+4
+3
+2
+1
+0
+top element:4
+element found at position:3
+element not found
+
