@@ -1,0 +1,13 @@
+
+package com.rashmitech.java.collection.set;
+
+public class Mainmobile {
+	public static void main(String[] args) {
+		int[] id={34,45,67,78,23};
+		String[] name= {"sowmya","sindhu","seema","shreya","monu"};
+		CustomArrayList custom=new CustomArrayList();
+		custom.add(id,name);
+	}
+}
+
+
