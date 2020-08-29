@@ -1,0 +1,41 @@
+package com.rashmitech.java.collection.set;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CustomArrayList {
+	public class Employee{
+		public int id;
+		public String name;
+		
+	public Employee(int id,String name) {
+		this.id=id;
+		this.name=name;
+	}
+		
+	}
+	public static void main(String[] args) {
+		int[] id={34,45,67,78,23};
+		String[] name= {"sowmya","sindhu","seema","shreya","monu"};
+		CustomArrayList custom=new CustomArrayList();
+		custom.add(id,name);
+	}
+
+
+	private void add(int[] id, String[] name) {
+		List<Employee>list=new ArrayList<>();
+		for(int i=0;i<5;i++) {
+			list.add(new Employee(id[i],name[i]));
+		}
+		print(list);
+	}
+	private void print(List<Employee> list) {
+		for(int i=0;i<5;i++) {
+			Employee e=list.get(i);
+			System.out.println("Employee id:"+e.id);
+			System.out.println("Employee name:"+e.name);
+
+		}
+	}
+}
+
