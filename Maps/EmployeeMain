@@ -1,0 +1,26 @@
+package com.rashmitech.java.collection.map;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.TreeMap;
+
+public class TreeMapDemo {
+
+	public static void main(String[] args) throws Exception {
+		BufferedReader br=new BufferedReader(new FileReader("C:\\Users\\hp\\Desktop\\employee.txt"));
+		String name=null;
+		EmployeeComparator employeecomparator=new EmployeeComparator();
+		Map<String,Double>salarycomparsion=new TreeMap<>();
+
+		while((name=br.readLine())!=null){
+			
+		}
+		
+		}
+
+	}
+
+
